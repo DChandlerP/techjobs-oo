@@ -6,13 +6,10 @@
 
 <div th:replace="fragments :: page-header"></div>
 
-/*realized I could re-use code from elsewhere, placed it in fragments.
-If it works I need to remember to go to list-jobs and do this there also
-or at least ask  if this follow best practices */
+/* Realized I could re-use code from elsewhere, placed it in fragments and
+call it in both locations. */
 
-<div class="container body-content" th:replace="fragments :: jobs-list">
-
-</div>
+<div class="container body-content" th:replace="fragments :: jobs-list"></div>
 
 </body>
 </html>
