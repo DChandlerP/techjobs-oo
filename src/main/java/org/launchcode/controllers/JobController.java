@@ -55,7 +55,8 @@ public class JobController {
                 jobData.getLocations().findById(jobForm.getLocationId()),
                 jobData.getPositionTypes().findById(jobForm.getPositionTypeId()),
                 jobData.getCoreCompetencies().findById(jobForm.getCoreCompetencyId()));
-        jobData.add(newJob);
+                jobData.add(newJob);
+
         return "redirect:/job?id=" + newJob.getId();
 
     }
