@@ -5,11 +5,9 @@
 <body>
 
 <div th:replace="fragments :: page-header"></div>
+<div class="container body-content">
 
-/* Realized I could re-use code from elsewhere, placed it in fragments and
-call it in both locations. */
-
-<div class="job-listing" th:replace="fragments :: single-job"></div>
-
+<div th:replace="fragments :: single-job"></div>
+</div>
 </body>
 </html>
