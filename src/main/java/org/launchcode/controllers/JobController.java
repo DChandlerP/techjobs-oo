@@ -51,6 +51,7 @@ public class JobController {
         System.out.print(jobForm);
 
         Job newJob = new Job(jobForm.getName(),
+                //Need list of all employers, and the ID. Explained in Q&A.
                 jobData.getEmployers().findById(jobForm.getEmployerId()),
                 jobData.getLocations().findById(jobForm.getLocationId()),
                 jobData.getPositionTypes().findById(jobForm.getPositionTypeId()),
